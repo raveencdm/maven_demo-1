@@ -245,6 +245,9 @@
                         <artifactId>maven-pmd-plugin</artifactId>
                         <version>3.2</version>
                         <configuration>
+                            <argLine>
+                                --illegal-access=permit
+                            </argLine>
                             <targetJdk>1.6</targetJdk>
                             <aggregate>true</aggregate>
                             <format>xml</format>
